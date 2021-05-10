@@ -11,6 +11,6 @@ const subLength = (string, char) => {
   if (indices.length < 2){
     return 0;
   } else {
-  return indices[1] - indices[0] + 1;
+  return string.slice(indices[0], indices[1]).length + 1;
   }
 };
